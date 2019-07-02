@@ -16,12 +16,11 @@ if (age < 18) {
 if (age > 65) {
     sconto = 40;
     var biglietto = (bigliettoInt / 100) * 40;
-} else {
+}
+if (age >= 18 && age <= 65) {
     sconto = 0;
     var biglietto = (bigliettoInt);
 };
-console.log(sconto)
-
-console.log(biglietto);
-document.getElementById("prezzoTreno").innerHTML = "Il prezzo del tuo biglietto sarà:" + biglietto + ". Ti è stato applicato uno sconto del:" + sconto + "%.";
-//  0.21 cent x km ma con uno sconto di 20% if < 18 anni e del 40% if> 65 anni
+// console.log(sconto)
+// console.log(biglietto);
+document.getElementById("prezzoTreno").innerHTML = "Il prezzo del tuo biglietto sarà : " + biglietto + "€. Ti è stato applicato uno sconto del:" + sconto + " %.";
