@@ -5,8 +5,9 @@ var lungh = prompt(" Inserisci il chilometraggio del tuo viaggio");
 //  calcolo del prezzo del biglietto 
 var yeage;
 var sconto;
-
-var age = (2019 - yeage);
+var d = new Date();
+var thsyear = d.getFullYear();
+var age = (thsyear - yeage);
 var bigliettoInt = (0.21 * lungh);
 
 if (age < 18) {
