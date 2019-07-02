@@ -24,4 +24,4 @@ if (age >= 18 && age <= 65) {
 };
 // console.log(sconto)
 // console.log(biglietto);
-document.getElementById("prezzoTreno").innerHTML = "Il prezzo del tuo biglietto sarà : " + biglietto + "€. Ti è stato applicato uno sconto del:" + sconto + " %.";
+document.getElementById("prezzoTreno").innerHTML = "Il prezzo del tuo biglietto sarà : " + biglietto.toFixed() + " €. Ti è stato applicato uno sconto del:" + sconto + " %.";
